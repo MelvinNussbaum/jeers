@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="jeers-app:ear exploded">
+    <output-path>$PROJECT_DIR$/jeers-app/target/jeers-app-1.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>jeers-app</module>
+        <packaging>ear</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="jeers-app/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/jeers-app/target/jeers-app-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/jeers-app/src/main/application" />
+      <element id="archive" name="jeers-web.war">
+        <element id="artifact" artifact-name="jeers-web:war exploded" />
+      </element>
+      <element id="archive" name="jeers-ejb.jar">
+        <element id="artifact" artifact-name="jeers-ejb:ejb exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="archive" name="jeers-jpa-1.0.jar">
+          <element id="module-output" name="jeers-jpa" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="jeersdb" uuid="42988e51-8cf8-4b21-bf01-68b691674f9f">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/jeersdb</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="test" uuid="ade4c768-e906-48a4-b1ce-ed86122eec98">
+      <driver-ref>derby.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:memory:test;create=true</jdbc-url>
+    </data-source>
+  </component>
+</project>
